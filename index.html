@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator - Muhammad Arka Kharisma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootsnipp.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body style="background: #ffcdd2;">
+    <div class="container">
+        <div class="formBox">
+            <h1 class="title">Kalkulator</h1>
+            <div class="row">
+                <div class="col-md-6 mx-auto d-block">
+                    <div class="inputBox">
+                        <div class="inputText">Nilai 1</div>
+                        <input onkeyup="proses();" type="number" id="nilai1" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mx-auto d-block">
+                    <div class="inputBox">
+                        <div class="inputText">Nilai 2</div>
+                        <input onkeyup="proses();" type="number" id="nilai2" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom:25px;">
+                <div class="col-md-6 mx-auto d-block">
+                    <center>
+                        <button onclick="proses('+');" class="btn btn-success button" style="font-size: 15px;">+</button>
+                        <button onclick="proses('-');" class="btn btn-success button" style="font-size: 15px;">-</button>
+                        <button onclick="proses('*');" class="btn btn-success button" style="font-size: 15px;">x</button>
+                        <button onclick="proses('/');" class="btn btn-success button button-ujung" style="font-size: 15px;">/</button>
+                    </center>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mx-auto d-block">
+                    <center>
+                        <span class="textHasil">Hasil</span><br/>
+                        <span id="hasil" class="hasil">0</span>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
